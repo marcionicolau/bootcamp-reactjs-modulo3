@@ -1,16 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
+import './config/ReactotronConfig';
 
 import store from './store';
-import TodoList from './TodoList';
+import Routes from './routes';
 
 function App() {
   return (
     <Provider store={store}>
-      <Fragment>
-        <h1>Hello World</h1>
-        <TodoList />
-      </Fragment>
+      <Routes />
     </Provider>
   );
 }
